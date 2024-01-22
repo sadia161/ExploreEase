@@ -14,11 +14,8 @@ async function searchQuerybyhotelname() {
         }
 
         const data = await response.json();
-        hotelInfoContainer.textContent= `${data}`;
-        
+        hotelInfoContainer.textContent = `Place Name: ${data.placeName}`;  
         console.log("Data from server:", data);
-
-        
 
         const formattedData = Object.entries(data).map(([key, value]) => `${key}\t${JSON.stringify(value)}`).join('\n');
         console.log("Formatted Data:", formattedData);
@@ -49,16 +46,4 @@ async function searchQuerybyhotelplace() {
         console.error("Error fetching data:", error);
     }
 }
-// const inputEl = document.getElementById('input-el');
 
-// //console.log(inputEl);
-
-// async function searchQuery(){
-//     const employeeName = inputEl.value;
-
-//      const response= await fetch(`/Employees/${employeeName}`);
-//     // const data = await response.json();
-//     const data =await response.json();
-//     console.log(data);
-//    // console.log(employeeName);
-// }
