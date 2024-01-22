@@ -1,49 +1,38 @@
-
-body{
+body {
     background-image: url("EXPLORE.png");
-
-    margin : 0;
-    padding : 10px;
-    background-color:white;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
     background-size: cover;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    color :midnightblue;
-    font-size :x-large;
+    color: midnightblue;
+    font-size: x-large;
     min-width: 400px;
-    
-
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Added to place items vertically */
+    flex-direction: column;
     height: 100vh;
-} 
-
-input{
-    width : 100%;
-    padding-left : 10px;
-    padding-right : 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #5f9341
 }
 
+input {
+    width: 40%; /* Adjusted width */
+    padding: 8px; /* Adjusted padding */
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+    margin-bottom: 10px;
+}
 
 button {
-    background : rgb(67, 142, 212);
-    border: 10px solid white; 
-    border:white;
-    padding-top :10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color : white;
+    background: rgb(67, 142, 212);
+    border: none;
+    padding: 8px 12px; /* Adjusted padding */
+    font-size: small; /* Adjusted font size */
+    color: white;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 2px;
-    margin-top: 4px;
-    border-radius: 10px;
+    width: 20%; /* Adjusted width */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Adjusted border radius */
 }
