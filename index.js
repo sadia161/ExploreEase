@@ -19,15 +19,9 @@ async function fun(query) {
             password: "ease",
             connectString: "localhost/orclpdb"
         });
-
-        // const data = await con.execute(
-        //     "SELECT * FROM departments" ,
-        // );
-
         const data = con.execute(query);
         await con.close();
         
-      
         //console.log(data.rows);
         return data;
 
@@ -65,25 +59,3 @@ app.get('/Places/:username',async (req,res)=>{
     }
    
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// res.send('<html><head><title>heyyyy</title></head><body>cse onek kothin</body></html>');
-
-   // const data = await fun(`SELECT * FROM EMPLOYEES WHERE "FIRST_NAME" = '${username}' `);
-  // res.send({name : 123 , username : 4});
-   // res.end();a
