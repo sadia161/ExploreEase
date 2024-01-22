@@ -1,18 +1,10 @@
 const oracledb = require('oracledb');
 const express = require('express');
-<<<<<<< HEAD
 const cors = require('cors');
 const app = express();
  const port = 3000;
 
 app.use(cors());
-=======
-// const cors = require('cors');
-const app = express();
-const port = 3000;
-
-// app.use(cors());
->>>>>>> 411e12a26fd1edfb368228cb909e68bed87aad84
  app.use(express.static('public'))
 //oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT;
 
