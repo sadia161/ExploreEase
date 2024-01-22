@@ -15,7 +15,9 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
+h4 {
+    margin-bottom: 16px; /* Add margin to separate heading from the input fields */
+}
 label {
     display: block;
     margin-bottom: 8px;
