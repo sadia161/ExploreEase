@@ -1,18 +1,10 @@
 const oracledb = require('oracledb');
 const express = require('express');
-<<<<<<< HEAD
 const cors = require('cors');
 const app = express();
  const port = 3000;
 
 app.use(cors());
-=======
-// const cors = require('cors');
-const app = express();
-const port = 3000;
-
-// app.use(cors());
->>>>>>> 411e12a26fd1edfb368228cb909e68bed87aad84
  app.use(express.static('public'))
 //oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT;
 
@@ -27,9 +19,15 @@ async function fun(query) {
             password: "ease",
             connectString: "localhost/orclpdb"
         });
+
+        // const data = await con.execute(
+        //     "SELECT * FROM departments" ,
+        // );
+
         const data = con.execute(query);
         await con.close();
         
+      
         //console.log(data.rows);
         return data;
 
@@ -67,3 +65,25 @@ app.get('/Places/:username',async (req,res)=>{
     }
    
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// res.send('<html><head><title>heyyyy</title></head><body>cse onek kothin</body></html>');
+
+   // const data = await fun(`SELECT * FROM EMPLOYEES WHERE "FIRST_NAME" = '${username}' `);
+  // res.send({name : 123 , username : 4});
+   // res.end();a
